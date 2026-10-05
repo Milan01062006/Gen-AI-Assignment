@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Department Website</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; }
+    header { background:#004080; color:white; padding:15px; text-align:center; }
+    nav { background:#0066cc; display:flex; justify-content:center; }
+    nav a { color:white; padding:14px 20px; text-decoration:none; }
+    nav a:hover { background:#004080; }
+    section { padding:20px; }
+    h2 { color:#004080; }
+    .gallery img { width:100%; max-width:200px; margin:10px; border:3px solid #004080; }
+    .faculty-table, .faculty-table th, .faculty-table td {
+      border:1px solid #004080; border-collapse:collapse; padding:8px;
+    }
+    .faculty-table { width:100%; }
+    form { display:flex; flex-direction:column; max-width:400px; }
+    form input, form textarea { margin:8px 0; padding:10px; border:1px solid #004080; }
+    form button { background:#004080; color:white; padding:10px; border:none; cursor:pointer; }
+    form button:hover { background:#0066cc; }
+    footer { background:#004080; color:white; text-align:center; padding:10px; }
+    @media (max-width:600px) {
+      nav { flex-direction:column; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Department of Computer Science</h1>
+</header>
+
+<nav>
+  <a href="#intro">Introduction</a>
+  <a href="#courses">Courses</a>
+  <a href="#faculty">Faculty</a>
+  <a href="#achievements">Achievements</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#multimedia">Multimedia</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="intro">
+  <h2>Introduction</h2>
+  <p>Welcome to the Department of Computer Science. We focus on innovation, research, and excellence in teaching.</p>
+</section>
+
+<section id="courses">
+  <h2>Courses Offered</h2>
+  <ul>
+    <li>B.Tech in Computer Science</li>
+    <li>M.Tech in Artificial Intelligence</li>
+    <li>Ph.D. in Data Science</li>
+  </ul>
+</section>
+
+<section id="faculty">
+  <h2>Faculty Information</h2>
+  <table class="faculty-table">
+    <tr><th>Name</th><th>Designation</th><th>Specialization</th></tr>
+    <tr><td>Dr. A Sharma</td><td>Professor</td><td>Machine Learning</td></tr>
+    <tr><td>Dr. B Gupta</td><td>Associate Professor</td><td>Networks</td></tr>
+    <tr><td>Ms. C Singh</td><td>Assistant Professor</td><td>Web Development</td></tr>
+  </table>
+</section>
+
+<section id="achievements">
+  <h2>Student Achievements</h2>
+  <ol>
+    <li>Winner of National Coding Hackathon 2025</li>
+    <li>Published research in IEEE Journals</li>
+    <li>Top ranks in GATE Examination</li>
+  </ol>
+</section>
+
+<section id="gallery">
+  <h2>Image Gallery</h2>
+  <div class="gallery">
+    <img src="images\adam-kool-ndN00KmbJ1c-unsplash.jpg" alt="Event 1">
+    <img src="images\artem-sapegin-8c6eS43iq1o-unsplash.jpg" alt="Event 2">
+    <img src="images\enrico-bet-IicyiaPYGGI-unsplash.jpg" alt="Event 3">
+  </div>
+</section>
+
+<section id="multimedia">
+  <h2>Multimedia Content</h2>
+  <video width="320" controls>
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    Your browser does not support video.
+  </video>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" rows="4" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2026 Department of Computer Science</p>
+</footer>
+
+</body>
+</html>
