@@ -1,11 +1,11 @@
 # Assignment – Front-End UI/UX Development
-##STRUCTURE
+## STRUCTURE
 LNT-Assignment
-|-Bootstrap Based Website
-|-CSS3 Layout and Responsive Design
-|-HTML5 Web Page Development
-|-Interactive UI-UX Project
-|-jQuery Interactive Web Application
+- |-Bootstrap Based Website
+- |-CSS3 Layout and Responsive Design
+- |-HTML5 Web Page Development
+- |-Interactive UI-UX Project
+- |-jQuery Interactive Web Application
 ## Q1. HTML5 Web Page Development
 
 Design and develop a responsive **College Department Website** using HTML5. The website should include:
