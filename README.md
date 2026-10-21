@@ -1,6 +1,6 @@
 # Assignment – Front-End UI/UX Development
 ## STRUCTURE
-- |-<Bootstrap Based Website>
+- |-[Bootstrap Based Website](https://milan01062006.github.io/Gen-AI-Assignment/BootstrapBasedWebsite)
 - |-<CSS3 Layout and Responsive Design>
 - |-<HTML5 Web Page Development>
 - |-<Interactive UI-UX Project>
