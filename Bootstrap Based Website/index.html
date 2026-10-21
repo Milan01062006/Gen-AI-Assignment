@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hearth & Leaf - Online Food Ordering</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --green: rgb(21, 128, 61);
+      --sage: rgb(134, 239, 172);
+      --sand: rgb(250, 250, 249);
+      --text: rgb(41, 37, 36);
+    }
+    body { background: var(--sand); color: var(--text); }
+    .bg-green { background: var(--green); }
+    .text-green { color: var(--green); }
+    .bg-sage { background: var(--sage); }
+    .btn-green { background: var(--green); color: #fff; border: 0; }
+    .btn-green:hover { background: rgb(16, 100, 48); color: #fff; }
+    .navbar .nav-link { color: #fff; }
+    .navbar .nav-link:hover { color: var(--sage); }
+    .hero { background: var(--green); color: #fff; }
+    .card { border: 1px solid var(--sage); background: #fff; }
+    .emoji { font-size: 3.5rem; }
+    .offer { background: var(--sage); border-radius: .5rem; }
+  </style>
+</head>
+<body>
+
+<!-- Responsive Navbar -->
+<nav class="navbar navbar-expand-md navbar-dark bg-green sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Hearth &amp; Leaf</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#categories">Categories</a></li>
+        <li class="nav-item"><a class="nav-link" href="#menu-items">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="#offers">Offers</a></li>
+        <li class="nav-item"><a class="nav-link" href="#order">Order</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero py-5">
+  <div class="container text-center text-md-start">
+    <h1 class="display-5 fw-bold">Warm, fresh food at your door</h1>
+    <p class="lead">Home-style meals made with seasonal ingredients.</p>
+    <a href="#menu-items" class="btn btn-light btn-lg">See the menu</a>
+  </div>
+</header>
+
+<!-- Categories -->
+<section id="categories" class="container py-5">
+  <h2 class="mb-4">Categories</h2>
+  <div class="row g-3 text-center">
+    <div class="col-6 col-md-3"><div class="card p-3"><div class="emoji">🍕</div>Pizza</div></div>
+    <div class="col-6 col-md-3"><div class="card p-3"><div class="emoji">🍔</div>Burgers</div></div>
+    <div class="col-6 col-md-3"><div class="card p-3"><div class="emoji">🥗</div>Salads</div></div>
+    <div class="col-6 col-md-3"><div class="card p-3"><div class="emoji">🍰</div>Desserts</div></div>
+  </div>
+</section>
+
+<!-- Food cards (Bootstrap Grid) -->
+<section id="menu-items" class="container pb-5">
+  <h2 class="mb-4">Popular dishes</h2>
+  <div class="row g-4">
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card h-100 text-center p-3">
+        <div class="emoji">🍕</div>
+        <h5 class="mt-2">Margherita Pizza</h5>
+        <p class="text-green fw-bold">₹299</p>
+        <button class="btn btn-green mt-auto order-btn" data-item="Margherita Pizza">Add to order</button>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card h-100 text-center p-3">
+        <div class="emoji">🍔</div>
+        <h5 class="mt-2">Veg Burger</h5>
+        <p class="text-green fw-bold">₹149</p>
+        <button class="btn btn-green mt-auto order-btn" data-item="Veg Burger">Add to order</button>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card h-100 text-center p-3">
+        <div class="emoji">🥗</div>
+        <h5 class="mt-2">Garden Salad</h5>
+        <p class="text-green fw-bold">₹129</p>
+        <button class="btn btn-green mt-auto order-btn" data-item="Garden Salad">Add to order</button>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card h-100 text-center p-3">
+        <div class="emoji">🍰</div>
+        <h5 class="mt-2">Chocolate Cake</h5>
+        <p class="text-green fw-bold">₹179</p>
+        <button class="btn btn-green mt-auto order-btn" data-item="Chocolate Cake">Add to order</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Offers -->
+<section id="offers" class="container pb-5">
+  <h2 class="mb-4">Offers</h2>
+  <div class="row g-3">
+    <div class="col-12 col-md-6"><div class="offer p-4"><h5>20% off your first order</h5><p class="mb-0">Use code <strong>WELCOME20</strong>.</p></div></div>
+    <div class="col-12 col-md-6"><div class="offer p-4"><h5>Free delivery above ₹500</h5><p class="mb-0">Applied automatically at checkout.</p></div></div>
+  </div>
+</section>
+
+<!-- Order form -->
+<section id="order" class="container pb-5">
+  <h2 class="mb-4">Place your order</h2>
+  <div class="row">
+    <div class="col-12 col-md-8 col-lg-6">
+      <div class="mb-3">
+        <label class="form-label" for="name">Name</label>
+        <input id="name" class="form-control" placeholder="Your name">
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="phone">Phone</label>
+        <input id="phone" class="form-control" placeholder="Phone number">
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="dish">Dish</label>
+        <select id="dish" class="form-select">
+          <option>Margherita Pizza</option>
+          <option>Veg Burger</option>
+          <option>Garden Salad</option>
+          <option>Chocolate Cake</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="qty">Quantity</label>
+        <input id="qty" type="number" min="1" value="1" class="form-control">
+      </div>
+      <div class="mb-3">
+        <label class="form-label" for="address">Delivery address</label>
+        <textarea id="address" class="form-control" rows="2"></textarea>
+      </div>
+      <button id="placeOrder" class="btn btn-green w-100">Place order</button>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-green text-white text-center py-3">
+  <small>© 2026 Hearth &amp; Leaf</small>
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="orderModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-sage">
+        <h5 class="modal-title">Order placed</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body" id="modalText"></div>
+      <div class="modal-footer">
+        <button class="btn btn-green" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const modal = new bootstrap.Modal(document.getElementById('orderModal'));
+
+  // "Add to order" buttons pick the dish in the form
+  document.querySelectorAll('.order-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.getElementById('dish').value = btn.dataset.item;
+      document.getElementById('order').scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  // Place order shows the confirmation modal
+  document.getElementById('placeOrder').addEventListener('click', () => {
+    const name = document.getElementById('name').value.trim();
+    const address = document.getElementById('address').value.trim();
+    if (!name || !address) {
+      alert('Please enter your name and delivery address.');
+      return;
+    }
+    const dish = document.getElementById('dish').value;
+    const qty = document.getElementById('qty').value;
+    document.getElementById('modalText').textContent =
+      `Thanks, ${name}! ${qty} x ${dish} will be delivered to ${address}.`;
+    modal.show();
+  });
+</script>
+</body>
+</html>
