@@ -1,10 +1,10 @@
 # Assignment – Front-End UI/UX Development
 ## STRUCTURE
-- |-[Bootstrap Based Website](https://milan01062006.github.io/Gen-AI-Assignment/BootstrapBasedWebsite)
-- |-<CSS3 Layout and Responsive Design>
-- |-<HTML5 Web Page Development>
-- |-<Interactive UI-UX Project>
-- |-<jQuery Interactive Web Application>
+- |-Bootstrap Based Website
+- |-CSS3 Layout and Responsive Design
+- |-HTML5 Web Page Development
+- |-Interactive UI-UX Project
+- |-jQuery Interactive Web Application
 ## Q1. HTML5 Web Page Development
 
 Design and develop a responsive **College Department Website** using HTML5. The website should include:
