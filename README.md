@@ -1,4 +1,5 @@
 # Assignment – Front-End UI/UX Development
+Github pages link: <https://milan01062006.github.io/Gen-AI-Assignment/>
 ## STRUCTURE
 - |-Bootstrap Based Website
 - |-CSS3 Layout and Responsive Design
